@@ -50,7 +50,7 @@ setup(
     extras_require={
         "dev": ["check-manifest"],
         "test": ["coverage", "pytest"],
-        "doc": ["sphinx", "recommonmark", "pytest"],
+        "doc": ["sphinx", "recommonmark", "sphinx-jsonschema", "pytest"],
     },
     **extras
 )
