@@ -24,6 +24,7 @@ Quick start
                         template="HelloWorld",
                     )
                 ],
+                status_message_template="Screen complete"
             )
 
     print(json.dumps(QuickWorkflow().as_dict(), indent=4))
@@ -37,8 +38,11 @@ Produces the output:
         "components": {
             "HelloWorldMessage": {
                 "type": "message_box",
-                "message_template": "HelloWorld",
-                "message_type": "info"
+                "message": {
+                    "template": "HelloWorld",
+                    "type": "info"
+                },
+                "size": "normal"
             }
         },
         "flow": {
@@ -57,11 +61,11 @@ Produces the output:
                     ],
                     "status_message": {
                         "type": "success",
-                        "template": null
+                        "template": "Screen complete"
                     }
                 }
             ]
         },
-        "hash": "2e3b480ef9391f5c8b1f6114378ce7ae6f7b1f6ae6064162dff55c565aad1bdd7f970ff6becf30c92c0e818d5d3e5a5cacfd716e8891049d5bcbf1728dfd8509",
+        "hash": "1a85414df82bdb74b36ad28150b4ec339b69a9b1772ad55d5aaea15d5926ec6aa5782ac08d28503e7ca4d13da79731e522e56e9be153c30fe73b8a68ab8643cf",
         "context": {}
     }

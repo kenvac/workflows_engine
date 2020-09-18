@@ -299,7 +299,7 @@ class MessageBox(Component):
 
     template = Translatable()
 
-    def __init__(self, template, message_type, size=None, **kwargs):
+    def __init__(self, template, message_type, size="normal", **kwargs):
         super().__init__(**kwargs)
         self.template = template
         self.type = message_type
